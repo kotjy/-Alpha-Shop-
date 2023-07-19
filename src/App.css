@@ -1,0 +1,9 @@
+.mainContainer{
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.formContainer{
+  width:540px;
+}
