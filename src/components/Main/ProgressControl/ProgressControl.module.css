@@ -9,6 +9,11 @@
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
+  justify-content: end; /*暫定*/
+}
+
+.buttonGroup1{
+  justify-content: end;
 }
 
 .next ,.prev{

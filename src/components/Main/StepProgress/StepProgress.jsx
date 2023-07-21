@@ -1,7 +1,7 @@
 import styles from "./StepProgress.module.css";
 // import { ReactComponent as CheckIcon } from "../../icons/pg-complete.svg";
 
-function StepProgress() {
+export default function StepProgress() {
   return (
     <div>   
       <h2 class={styles.registerTitle}>結帳</h2>
@@ -39,4 +39,4 @@ function StepProgress() {
   )
 }
 
-export default StepProgress;
+

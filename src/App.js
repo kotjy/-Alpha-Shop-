@@ -1,28 +1,14 @@
 import "./App.css";
-import StepProgress from "./components/StepProgress/StepProgress.jsx";
-import StepOne from "./components/StepOne/StepOne.jsx";
-import ProgressControl from "./components/ProgressControl/ProgressControl.jsx";
-import StepTwo from "./components/StepTwo/StepTwo.jsx";
-import StepThree from "./components/StepThree/StepThree.jsx";
+import Main from './components/Main/Main.jsx'
+
+
+
 
 function App() {
   return (
-
-   <main className ="mainContainer">
-
-    <div className ="stepContainer">
-       <StepProgress />
-    <div className="formContainer">
-      <StepOne />
-      <StepTwo />
-      <StepThree />
-    </div>
-   
-   <div className="controlContainer">
-    <ProgressControl />
-   </div>
-    </div>
-   </main>    
+    <>
+    <Main />
+    </>
   );
     
 }
