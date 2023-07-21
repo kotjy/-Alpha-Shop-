@@ -1,6 +1,7 @@
+
 import styles from "./ProgressControl.module.css";
-import { ReactComponent as LeftArrow } from "/Users/hannah/alpha-shop/src/icons/left-arrow.svg";
-import { ReactComponent as RightArrow } from "/Users/hannah/alpha-shop/src/icons/right-arrow.svg";
+import { ReactComponent as LeftArrow } from "../../../icons/left-arrow.svg";
+import { ReactComponent as RightArrow } from "../../../icons/right-arrow.svg";
 
 
 

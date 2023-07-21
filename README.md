@@ -17,3 +17,4 @@
 2. 開啟終端機進入到存放專案的本機位置，執行以下將專案 clone ：# Alpha-shop.hw2
 # Alpha-shop.hw2
 # alpha-shop.hw2
+# -Alpha-Shop-
