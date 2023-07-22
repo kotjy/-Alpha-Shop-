@@ -24,6 +24,7 @@
 .productControl{
   display: flex;
   align-items: center;
+  
 }
 
 .productName{
@@ -34,6 +35,8 @@ font-size: 17px;
   border:none;
   padding:30px;
   width: 25px;
+  height:27px;
+  cursor:pointer;
 
 }
 
