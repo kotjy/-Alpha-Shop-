@@ -26,7 +26,7 @@ function Product ( {id , name , img, price, quantity}) {
               </div>
             </div>   
 
-  )
+  );
 }
 
 
@@ -39,7 +39,7 @@ return (
       )}
   </section>
     
-)
+);
 
 }
 
