@@ -1,52 +1,16 @@
-.progressControlContainer{
-  display: flex;
-  flex-direction: column;
-  width:540px;
+.container {
+  width: 100%;
+  height: 100%; 
+  margin-right: 60px;
  
 }
 
-.buttonGroup{
+.step1 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.other_steps {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
-  padding-top: 24px;
-  justify-content: end; 
-  border-top:solid 1px #999;
 }
-
-.buttonGroup1{
-  justify-content: end;
-}
-
-.next ,.prev{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 150px;
-  height: 45px;
-  border-radius: 10px;
-  border: none;
-  font-weight: 500; 
-}
-
-.next{
-  background-color: #f67599;
-  color: white;
-}
-
-
-.prev{
-  background: none;
-}
-
-.arrowLeft{
-  fill : black;
-  margin-right: 12px;
-  
-}
-
-.arrowRight{
-  margin-left: 12px;
-  
-}
-
