@@ -1,0 +1,27 @@
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+}
+
+/* 當前頁面樣式 */
+.now {
+  border: black solid 1px;
+  background-color: white;
+}
+
+.text {
+  color: black;
+}
+
+/* 之後幾頁的樣式 */
+.future {
+  border: lightgray solid 1px;
+}
+
+.future_text {
+  color: lightgray;
+}
