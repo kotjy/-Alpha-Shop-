@@ -1,52 +1,49 @@
-
+import NextBtn from "../../Main/Button/NextBtn/NextBtn.jsx"
+import PrevBtn from "../../Main/Button/PrevBtn/PrevBtn.jsx"
+import SubmitBtn from "../../Main/Button/SubmitBtn/SubmitBtn.jsx"
 import styles from "./ProgressControl.module.css";
-import { ReactComponent as LeftArrow } from "../../../icons/left-arrow.svg";
-import { ReactComponent as RightArrow } from "../../../icons/right-arrow.svg";
+
+import React from "react";
 
 
 
+export default function ProgressControl ({page, setPage}) {
 
-function ProgressControl () {
- return(
+const handleNextPage = () => setPage( prePage => prePage = prePage + 1)
+const handlePrePage = () => setPage( prePage => prePage = prePage - 1)
 
-   <section class={styles.progressControlContainer}>
-          {/* <section class={`${styles.buttonGroup} ${styles.buttonGroup1} `}data-phase="address">
-            <button class={styles.next}>
-              下一步
-              <RightArrow className={styles.arrowRight} />
-            </button>
- </section> */}
 
-          <section class={styles.buttonGroup} data-phase="shipping">
+return(
+    <section className={styles.container}>
+       {page === 1 && 
+       <div className={styles.step1}>
+        <NextBtn onClick={handleNextPage} />
+        </div>
+        }
 
-             {/*  <button class={styles.prev}>
-             <LeftArrow className={styles.arrowLeft} />
-              上一步
-            </button> */}
+       
+       {page=== 2 && 
+       <div className= {styles.other_steps}>
+         <PrevBtn onClick={handlePrePage} />
+        <NextBtn onClick={handleNextPage} />
+        </div>
+        }
+      
+      
+      {page === 3 && 
+       <div className= {styles.other_steps}>
+         <PrevBtn onClick={handlePrePage} />
+        <SubmitBtn onClick={handleNextPage} />
+        </div>
+        }
 
-            <button class={styles.next}>
-              下一步
-              <RightArrow className={styles.arrowRight} />
-            </button>
-          </section>
 
-          {/* <section class={styles.buttonGroup} data-phase="credit-card">
-            <button class={styles.prev}>
-               <LeftArrow className={styles.arrowLeft} />
-              上一步
-            </button>
+    </section>
+    
 
-            <button class={styles.next}>
-              確認下單
-            </button>
-          </section> */}
-        </section>
- )
+
+)
 
 }
 
 
-
-
-
-export default ProgressControl;

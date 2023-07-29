@@ -1,42 +1,37 @@
 import styles from "./StepProgress.module.css";
-// import { ReactComponent as CheckIcon } from "../../icons/pg-complete.svg";
+import StepIcon from "./StepIcon/StepIcon.jsx"
 
-export default function StepProgress() {
-  return (
-    <div>   
-      <h2 class={styles.registerTitle}>結帳</h2>
 
-      <section class={styles.progressContainer}>
 
-        <span class={styles.currentGroup} data-phase="address">
-          <span class={styles.progressIcon}>
-            <span class={styles.text}>1</span>
-            {/* <CheckIcon className={styles.checkIcon}/> */}
-          </span>
-          <span class={styles.progressLabel}>寄送地址</span>
-        </span>
+export default function StepProgress ({ page}) {
+  return(
+    <div className={styles.stepProgress}>
+  <section className={styles.container}>
+                <span className={styles.group}>
+                    <StepIcon display={1} page={page}/>
+                    <span className={`${styles.label} ${page >= 1 && styles.label_done}`}>寄送地址</span>
+                </span>
 
-        <span class={styles.progressBar} data-order="1"></span>
+                <span className={`${styles.bar} ${page >= 1 && styles.bar_done}`}></span>
 
-        <span class={styles.progressGroup} data-phase="shipping">
-          <span class={styles.progressIcon}>
-            <span class={styles.text}>2</span>
-          </span>
-          <span class={styles.progressLabel}>運送方式</span>
-        </span>
+                <span className={styles.group}>
+                    <StepIcon display={2} page={page}/>
+                    <span className={`${styles.label} ${page >= 2 && styles.label_done}`}>運送方式</span>
+                </span>
 
-        <span class={styles.progressBar} data-order="2"></span>
+                <span className={`${styles.bar} ${page >= 2 && styles.bar_done}`}></span>
 
-        <span class={styles.progressGroup} data-phase="credit-card">
-          <span class={styles.progressIcon}>
-            <span class={styles.text}>3</span>
-          </span>
-          <span class={styles.progressLabel}>付款資訊</span>
-        </span>
-
-      </section>
-    </div>       
+                <span className={styles.group}>
+                    <StepIcon display={3} page={page}/>
+                    <span className={styles.label}>付款資訊</span>
+                </span>
+          </section>
+          </div>
   )
 }
 
 
+
+
+
+    
