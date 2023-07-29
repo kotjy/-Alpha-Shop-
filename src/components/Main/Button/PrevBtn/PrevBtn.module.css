@@ -1,0 +1,18 @@
+.prevBtn {
+  color: black;
+  background-color: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 7px;
+  border: transparent;
+  cursor: pointer;
+  width: 130px;
+ ;
+}
+
+.arrowLeft{
+ fill:black;
+ 
+}
