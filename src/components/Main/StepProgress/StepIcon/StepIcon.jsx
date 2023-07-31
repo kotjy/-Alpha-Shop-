@@ -15,7 +15,7 @@ export default function StepIcon ({display, page}) {
 
             {page < display && (
                 <span className={`${styles.icon} ${styles.future}`}>
-                    <span className={styles.future_text}>{display}</span>
+                    <span className={styles.future_text}>{display} </span> 
                 </span>
             )}
     </>
