@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { dummyProducts } from "./ItemData.jsx";
+import { dummyProducts } from "./itemData.jsx";
 import { ReactComponent as IconPlus } from '../../../icons/plus.svg'
 import { ReactComponent as IconMinus } from '../../../icons/minus.svg'
 import styles from "./Cart.module.css"
