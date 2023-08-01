@@ -6,7 +6,7 @@ function CityData({data}) {
     <select className={styles.selectStyle} required>
       {data.map((city) => {
         return (
-        <option value={city.value}>
+        <option  key={city.value} value={city.value}>
           {city.name}
         </option>
         )
@@ -28,8 +28,8 @@ function StepOne() {
           <div className={styles.inputGroupL1}> 
             <div className={styles.inputLabel}>稱謂</div>
             <div className={styles.selectContainer}>
-              <select className={styles.selectStyle}>
-                <option value="mr" selected>先生</option>
+              <select className={styles.selectStyle} defaultValue ="mr" >
+                <option value="mr">先生</option>
                 <option value="ms">女士</option>
                 <option value="mx">不明</option>
               </select>
