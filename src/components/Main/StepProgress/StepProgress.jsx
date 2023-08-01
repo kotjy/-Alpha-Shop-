@@ -3,7 +3,7 @@ import StepIcon from "./StepIcon/StepIcon.jsx"
 
 
 
-export default function StepProgress ({ page}) {
+export default function StepProgress ({ page }) { 
   return(
     <div className={styles.stepProgress}>
   <section className={styles.container}>
