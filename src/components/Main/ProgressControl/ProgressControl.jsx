@@ -9,8 +9,8 @@ import React from "react";
 
 export default function ProgressControl ({page, setPage}) {
 
-const handleNextPage = () => setPage( prePage => prePage = prePage + 1)
-const handlePrePage = () => setPage( prePage => prePage = prePage - 1)
+const handleNextPage = () => setPage( prePage =>  prePage + 1)
+const handlePrePage = () => setPage( prePage =>  prePage - 1)
 
 
 return(
