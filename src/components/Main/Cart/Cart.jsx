@@ -43,7 +43,7 @@ function CartItems({ products, onPlus, onMinus }) {
       ))}
     </>
   );
-}
+} 
 
 const Cart = () => {
   const [products, setProducts] = useState([...dummyProducts]);
