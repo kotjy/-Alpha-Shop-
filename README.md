@@ -9,6 +9,8 @@
   1. Step3:付款資訊form
   2. cart購物車（完成金額、數量控制）
   3. 建制表格分頁狀態和邏輯
+  4. 使用useState和useContext作狀態管理
+  5. 能夠console.log出step3付款資訊資料 
 
 
 ### 環境建置
