@@ -1,0 +1,15 @@
+.mainContainer{
+  position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.biggestContainer{
+  /*border:solid black;*/
+  margin-top: 10%;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}

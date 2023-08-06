@@ -1,13 +1,23 @@
 import "./App.css";
-import Main from './components/Main/Main.jsx'
+import { CartContextProvider } from "./context/CartContext";
+import Form from "./components/Main/Form";
+import Cart from "./components/Main/Cart/Cart";
 
 
 
 
 function App() {
   return (
-    
-    <Main />
+    <div className="biggestContainer">
+    <main className="mainContainer" >
+      <CartContextProvider>
+        <Form/>
+        <div className="cartContainer">
+          <Cart/>
+        </div>
+      </CartContextProvider>
+    </main>
+   </div>
     
   );
     
